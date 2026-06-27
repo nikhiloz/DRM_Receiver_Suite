@@ -1,0 +1,6 @@
+@startuml
+[Analog IF] -> [Mixer]
+[Local Osc] -> [Mixer]
+[Mixer] -> [Low Pass Filter]
+[Low Pass Filter] -> [Output Buffer]
+@enduml

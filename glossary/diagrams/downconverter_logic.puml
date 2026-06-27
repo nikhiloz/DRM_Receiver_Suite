@@ -1,0 +1,4 @@
+@startuml
+[Input IF] -> [Downconverter Logic]
+[Downconverter Logic] -> [Output IF (12kHz)]
+@enduml

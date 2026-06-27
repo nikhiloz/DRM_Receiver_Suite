@@ -1,0 +1,5 @@
+@startuml
+[Install Dream] -> [Configure Codecs]
+[Configure Codecs] -> [Lock Soundcard 48kHz]
+[Lock Soundcard 48kHz] -> [Verify Signal]
+@enduml
