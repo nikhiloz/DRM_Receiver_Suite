@@ -1,0 +1,22 @@
+@startuml
+!theme plain
+title DRM Receiver Signal Chain
+
+skinparam componentStyle uml2
+
+package "RF Frontend" {
+    [Antenna] --> [Analog Receiver]
+    [Analog Receiver] --> [IF Output (455kHz)]
+}
+
+package "Digitization" {
+    [Downconverter (455kHz -> 12kHz)] --> [Sound Card Interface]
+    [Sound Card Interface] --> [Sampled Signal (12kHz IF)]
+}
+
+package "Software Processing" {
+    [Sampled Signal (12kHz IF)] --> [Dream Software]
+    [Dream Software] --> [OFDM Demodulation]
+    [OFDM Demodulation] --> [Audio Out]
+}
+@enduml
