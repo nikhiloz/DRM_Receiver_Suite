@@ -1,0 +1,8 @@
+@startuml
+!theme plain
+skinparam componentStyle uml2
+
+[Analog Receiver] --> [Downconverter]
+[Downconverter] --> [Sound Card]
+[Sound Card] --> [Dream Software]
+@enduml
